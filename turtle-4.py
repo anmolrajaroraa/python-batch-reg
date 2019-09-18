@@ -4,8 +4,8 @@ import random
 s = turtle.Screen()
 t = turtle.Pen()
 s.bgcolor('black')
-#t.speed(0)
-#t.color('yellow')
+'''t.speed(0)
+t.color('yellow')'''
 t.shape('turtle')
 #s.screensize(1400,700)
 #t.turtlesize(2,2)

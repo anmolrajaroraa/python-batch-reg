@@ -16,13 +16,13 @@ colors = ['yellow', 'gold', 'orange', 'red', 'maroon', 'violet', 'magenta', 'pur
 
 for i in range(50):
     for j in range(3):
-        t.forward(10 * i)
+        t.forward(15 * i)
         t.left(120)
     t.penup()
     #color = random.choice(colors)
     t.color(random.choice(colors))
-    t.backward(5)
-    #t.right(90)
-    #t.forward(2.5)
-    #t.left(90)
+    t.backward(7.5)
+    t.right(90)
+    t.forward(5)
+    t.left(90)
     t.pendown()
