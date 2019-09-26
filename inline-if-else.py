@@ -37,6 +37,42 @@ listOfEvenNumbers = []
 #     listOfEvenNumbers.append(i) if ((i % 2 == 0) or (i % 3 == 0)) else False
 
 #List Comprehension
-evenNumbers = [i for i in range(1,101) if ((i % 2 == 0) or (i % 3 == 0))]
+originalEvenNumbers = [i for i in range(1,101) if ((i % 2 == 0)or(i % 3==0))]
+evenNumbers = [i**2 for i in range(1,101) if ((i % 2 == 0) or (i % 3 == 0))]
 
+newList = [(i**2 if ((i % 2 == 0) or (i % 3 == 0)) else 0) for i in range(1,101)]
+
+#syntax 1 -> [expression, for loop, if condition]
+
+print(originalEvenNumbers)
 print(evenNumbers)
+print(newList)
+
+#membership operators - in, not in
+#comparison operators - >,<,==,>=,<=,!=,not,is
+#logical operators - and , or
+
+print(4 in newList)
+print(4 not in newList)
+#print(10 > 20)
+#print(10 < 20)
+#print(10 == 20)
+#print(10 >= 20)
+print(10 <= 20)
+print(10!=20)
+
+list1 = [1,2,3]
+list2 = [1,2,3,[1,2,3]]
+list3 = [1,2,3]
+list4 = list1
+print(list1 in list2)
+print(list1 == list3)
+print(list1 is list3)
+print(hex(id(list1)))
+print(hex(id(list3)))
+print(hex(id(list4)))
+print(list1 is list4)
+
+flag = False
+if not flag:
+    print("flag is true")
